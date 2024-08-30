@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: SpringSec
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/todoapp
+    username: postgres
+    password: 2810
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://your-issuer-uri.com
+          jwk-set-uri: https://your-issuer-uri.com/.well-known/jwks.json
+  profiles:
+    active: dev
+  messages:
+    basename: messages
+    encoding: UTF-8
