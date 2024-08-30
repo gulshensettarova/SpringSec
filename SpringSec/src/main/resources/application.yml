@@ -26,3 +26,9 @@ spring:
     encoding: UTF-8
   liquibase:
     change-log: classpath:db/changelog/master.xml
+  authentication:
+    jwt:
+      jwt-token-validity-ms: 86400000 # 24 hours
+      private-key: "<your-private-key>"
+      public-key: "<your-public-key>"
+
