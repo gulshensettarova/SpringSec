@@ -28,7 +28,11 @@ import java.util.stream.Collectors;
 public class JwtProvider {
 
     @Value("${authentication.jwt.expiration-in-ms}")
-    private Long JWT_EXPIRATION_IN_MS;
+    private  Long JWT_EXPIRATION_IN_MS;
+
+    public Long getJWT_REFRESH_EXPIRATION_IN_MS() {
+        return JWT_REFRESH_EXPIRATION_IN_MS;
+    }
 
     @Value("${authentication.jwt.refresh-token-expiration-in-ms}")
     private Long JWT_REFRESH_EXPIRATION_IN_MS;

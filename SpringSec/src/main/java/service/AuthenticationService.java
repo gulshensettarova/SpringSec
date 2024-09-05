@@ -29,6 +29,9 @@ public class AuthenticationService {
 
         return jwtProvider.generateToken(userPrincipal);
     }
+    public UserPrincipal getUserPrincipal(String username) {
+        return (UserPrincipal) userService.loadUserByUsername(username);
+    }
 
 
 }

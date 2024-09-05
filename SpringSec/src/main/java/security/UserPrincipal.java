@@ -1,12 +1,15 @@
 package security;
 
 import lombok.Data;
+import model.entity.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Optional;
+
 public class UserPrincipal implements UserDetails {
 
     private int id;
@@ -20,6 +23,9 @@ public class UserPrincipal implements UserDetails {
         this.id = id;
         this.username = username;
         this.password = password;
+    }
+
+    public UserPrincipal(Optional<User> user) {
     }
 
     public int getId() {
