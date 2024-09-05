@@ -2,6 +2,9 @@ package model.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import org.springframework.security.core.GrantedAuthority;
+
+import java.util.Collection;
 
 @Data
 @Entity
@@ -18,4 +21,17 @@ public class User {
     @JoinColumn(name="role_id",referencedColumnName = "id")
     @Column(nullable = false)
     private Role role;
+
+    public User(String username, String password, Collection<GrantedAuthority> authorities) {
+        this.username = username;
+        this.password = password;
+        this.role = new Role();
+        for (GrantedAuthority authority : authorities) {
+
+        }
+    }
+
+    public User() {
+
+    }
 }

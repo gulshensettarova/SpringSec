@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/SpringSec.iml" filepath="$PROJECT_DIR$/.idea/SpringSec.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringSec.SpringSec.main.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringSec.SpringSec.main.iml" />
+    </modules>
+  </component>
+</project>

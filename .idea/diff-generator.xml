@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DiffGenerationConfig">
+    <option name="updateChangeLogPath" value="SpringSec/src/main/resources/db/changelog/master.xml" />
+    <option name="updateDbConnectionName" value="b7649cd6-4133-4e92-89af-ab8e38acf215" />
+  </component>
+</project>
